@@ -1,0 +1,87 @@
+body {
+    background: #C50000;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.container-all {
+    max-width: 1400px; /* Cambiado de width a max-width para flexibilidad */
+    width: 100%; /* Asegura que se ajuste al ancho disponible */
+    height: auto; /* Cambiado a auto para acomodar el contenido dinámicamente */
+    background: #F1F1F1;
+    border-radius: 10px;
+    color: #fff;
+    margin: auto;
+    padding: 20px; /* Agregado para evitar que el contenido toque los bordes */
+}
+
+.container {
+    display: flex; /* Cambiado a flex para un mejor control de los items */
+    flex-wrap: wrap; /* Permite que los items se envuelvan */
+    justify-content: space-around; /* Espacia los items uniformemente */
+    max-width: 100%;
+    margin: auto;
+    font-size: 1.3vw;
+}
+
+.item {
+    width: calc(50% - 60px); /* Ajusta el ancho para permitir el margen */
+    height: 250px;
+    background: #FFFDEF;
+    margin: 30px;
+    color: #000;
+    border-radius: 10px;
+    box-sizing: border-box; /* Asegura que el padding y border estén incluidos en el ancho/altura */
+}
+
+.item-2{
+    opacity: 0.75; /* Unificado para simplificar */
+}
+
+.item-3{
+    opacity: 0.50; /* Unificado para simplificar */
+}
+
+img {
+    width: 100%;
+    height: 100%; /* Mantiene la proporción de la imagen */
+    border-radius: 10px;
+}
+
+/*--------------------------------------------------------@media---------------------------------------*/
+
+@media only screen and (max-width: 1200px) {
+    .container-all {
+        background: rgba(110, 249, 245, .5);
+    }
+
+    .container {
+        font-size: 2.5vw;
+    }
+
+    h1 {
+        color: #3305fd;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container-all {
+        background: #fdc584;
+    }
+
+    .container {
+        font-size: 3.5vw;
+    }
+
+    .item {
+        width: 100%; /* Los items ocupan todo el ancho disponible */
+        margin: 15px 0; /* Ajusta el margen para pantallas pequeñas */
+    }
+    
+    h1 {
+        color: #01fbee;
+    }
+}
